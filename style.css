@@ -9,7 +9,7 @@
 }
 
 *{
-	margin: 0;
+	margin: 1;
 	padding: 3;
 	scroll-behavior: smooth;
 }
@@ -71,7 +71,7 @@ a.nav-link{
 }
 
 a.nav-link-logo{
-	padding: 30px 10px;
+	padding: 2px 10px;
 }
 
 .active{
@@ -89,7 +89,7 @@ a.nav-link-logo{
 
 #home{ 	
 	margin: auto;
-	height: 100vh;
+	height: 70vh; //altura do nome em relação ao início da página
 	color: var(--main-fonts-color);
 	display: flex;
 	flex-direction: column;
@@ -125,7 +125,7 @@ a.nav-link-logo{
 }
 
  h3{
-	padding-bottom: 15px;
+	padding-bottom: 10px;
     letter-spacing: normal;
     font-family: var(--main-font-family);
 	font-style: normal;
@@ -169,7 +169,7 @@ a.nav-link-logo{
 ──────────────────*/
 
 #projects{
-	margin-top:100px;
+	margin-top:500px;
     height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -240,7 +240,7 @@ a.nav-link-logo{
 #contact{
 	margin: auto;
 	padding-bottom: 20px;
-	height: 600px;
+	height: 1000px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -350,6 +350,21 @@ hr {
 		transform:translatex(0px);
 	}
 }
+
+/*---------------------
+	botões
+----------------------*/
+button
+{
+	font-size:100%;
+	font-family: 'Times New Roman', Times, serif;
+	border: 10;
+	padding: 10;
+	//width: 100%;
+	//height: 100%;
+    //background-color: var(--main-header-background);
+}
+
 
 /*────────────────── 
     media queries
