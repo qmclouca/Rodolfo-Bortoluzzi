@@ -89,7 +89,7 @@ a.nav-link-logo{
 
 #home{ 	
 	margin: auto;
-	height: 70vh; //altura do nome em relação ao início da página
+	height: 80vh; //altura do nome em relação ao início da página
 	color: var(--main-fonts-color);
 	display: flex;
 	flex-direction: column;
@@ -102,7 +102,7 @@ a.nav-link-logo{
 	background-size: cover;
 	background-position:center;
     position: absolute;
-    top: 40px;
+    top: 0px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -167,9 +167,33 @@ a.nav-link-logo{
 /*──────────────────
       projects
 ──────────────────*/
+/*
+#projects{ 	
+	margin: auto;
+	height: 80vh; //altura do nome em relação ao início da página
+	color: var(--main-fonts-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
 
+#projects .filter{
+	background: url('https://images.unsplash.com/photo-1544099858-75feeb57f01b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat;
+	background-size: cover;
+	background-position:center;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	opacity:.20;
+}  
+
+
+*/
 #projects{
-	margin-top:500px;
+	margin-top: 50px;
     height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -193,13 +217,13 @@ a.nav-link-logo{
     flex-wrap: wrap;
     justify-content:center;
 	align-items: center;
-	padding: 20px;
+	padding: 5px;
 }
 
 .card{
 	display: flex;
 	flex-direction: column;
-	margin: 20px;
+	margin: 10px;
 	width: 200px;
 	height:250px;
 	border-radius:12px;
@@ -214,7 +238,7 @@ a.nav-link-logo{
 
 .card .work-content{
 	text-align: center;
-	padding: 10px 5px;
+	padding: 5px 5px;
 	font-size: 14px;
 	color: var(--main-fonts-color);
 	font-family: var(--main-font-family);
@@ -240,7 +264,7 @@ a.nav-link-logo{
 #contact{
 	margin: auto;
 	padding-bottom: 20px;
-	height: 1000px;
+	height: 700px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
