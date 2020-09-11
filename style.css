@@ -89,7 +89,7 @@ a.nav-link-logo{
 
 #home{ 	
 	margin: auto;
-	height: 80vh; //altura do nome em relação ao início da página
+	height: 120vh; //altura do nome em relação ao início da página
 	color: var(--main-fonts-color);
 	display: flex;
 	flex-direction: column;
