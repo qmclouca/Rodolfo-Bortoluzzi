@@ -460,12 +460,13 @@ button
     font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
     font-size: 60px !important;
-    padding: 10px;
+    padding: 5px;
 	display: flex;
     background: rgb(39,40,34);
 	position: center;
     align-items: space-around;
 	justify-content:center;
+     border-radius: 15px;
 }
 .program-message{
     color: rgb(253,253,254);
@@ -474,4 +475,22 @@ button
     margin-left: 20px;
     margin-top: 80px;
     margin-bottom: 40px;
+}
+
+.codes-design{
+    background-color: rgb(37,52,97);
+    color: rgb(253,253,254);
+    display:flex;
+}
+
+.codes-text{
+    font-size:25%;
+    padding: 20px;
+}
+
+.table{
+   
+    display: flex;
+    border-radius: 15px;
+    padding: 5px;
 }
