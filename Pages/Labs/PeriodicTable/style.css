@@ -1,0 +1,54 @@
+.pte_table,.pte_element,.pte_detail {
+    box-sizing: border-box;
+    font-family: cursive;
+    padding: 0;
+}
+.pte_table {
+    box-shadow: 4px 4px 2px #666;
+    border: #999 1px solid;
+    background-color: #333;
+}
+.pte_element {
+    border: #999 1px solid;
+    background-color: #CCC;
+}
+.pte_element:hover {
+    background-color: #FFF;
+}
+.pte_title {
+    font-size: 1.0em;
+    color: #AAA;
+}
+.pte_label {
+    font-size: 0.6em;
+    color: #AAA;
+}
+.pte_number {
+    font-size: 0.5em;
+    color: #333;
+}
+.pte_symbol {
+    font-size: 0.6em;
+    color: #333;
+    text-align: center;
+}
+.pte_close {
+    font-size: 0.8em;
+    color: #999;
+}
+.pte_detail {
+    background-color: #FFF;
+    border: #CCC 1px solid;
+    font-size: 0.7em;
+    padding: 8px;
+}
+.pte_detail_label {
+    float: left;
+    clear: left;
+    color: #333;
+}
+.pte_detail_value {
+    float: left;
+    clear: right;
+    color: #666;
+}
