@@ -1,4 +1,5 @@
-(function( $ ) {
+$(function() {
+    $('#my_periodic').pte({ data : 'jquery.pte.json', config : {tooltip:true} });
     var _size;
     $.fn.pte = function(p) {
         var defaults = {
@@ -175,3 +176,4 @@
         }).replace(/\s+/g, '&nbsp;'); 
     }
 })( jQuery );
+

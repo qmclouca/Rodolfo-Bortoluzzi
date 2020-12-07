@@ -1,35 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-        <link rel="stylesheet" type="text/css" href="Pages/Labs/PeriodicTable/style.css" />
-        <script src="Pages/Labs/PeriodicTable/script.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <script src="http://jquery-pte.googlecode.com/files/jquery.pte.min.js"></script>
-  </head>
 
-  <body>
-    <header>
-      <a class="logo" href="#home">
-        <nav>	
-          <ul class="nav-bar">
-           <li><a class="nav-link" target="_blank" href="https://www.rlbpc.me">Blog</a></li>
-			<li><a class="nav-link" href="https://www.robo.place">Home</a></li>
-			<li><a class="nav-link" href="https://www.robo.place/#projects">Projects</a></li>
-			<li><a class="nav-link" href="https://www.robo.place/#contact">Contact</a></li>
-          </ul>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Elementos</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+	<link rel="icon" href="resources/logo.jpg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/oidc-client/1.10.1/oidc-client.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="script.js">
+	</script>
+</head>
+
+<body>
+	<div class="container">
+		<!--────────────────Header───────────────-->
+		<header>
+			<a class="logo" href="#home">
+		<nav>	
+		 <ul class="nav-bar">
+			<li><a class="nav-link" target="_blank" href="https://www.rlbpc.me">Blog</a></li>
+			<li><a class="nav-link" href="#home">Home</a></li>
+			<li><a class="nav-link" href="#projects">Projects</a></li>
+			<li><a class="nav-link" href="#contact">Contact</a></li>
+            
+		</ul>
 			<div class="hamburger">
 				<div class="line1"></div>
             <div class="line2"></div>
 				<div class="line3"></div>
 			</div>
 		</nav>
-    </header>
-
-   <div id="my_periodic"></div>
-        <script>
-            $('#my_periodic').pte({ data : 'jquery.pte.json', config : {tooltip:true} });
-        </script>
+	</header>
+	<main>
+		<!--─────────────────Home────────────────-->
+	  <div id="program-lenguages">
+		 <div class="filter"></div>
+		 <section class="intro">
+		  <h3><br>Elementos<hr></h3>
+            
+          <div id="my_periodic"> Periodic Table </div>
+		  <!--────social media links─────-->
+			 
+		  <div class="social-media">
+			  <a href="https://www.rlbpc.me/" target="_blank"><i class='fab fa-blogger'></i></a>
+              <a href="https://github.com/qmclouca" target="_blank"><i class='fab fa-github'></i></a>
+			  <a href="https://www.linkedin.com/in/rlbpc" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+			  <a href="https://www.youtube.com/channel/UC8YlqyxmD-Nm1nzIE1d1MaQ/" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="http://lattes.cnpq.br/3025724029603836" target="_blank"><i class='fas fa-graduation-cap'></i></a>
+		    </div>
+		</section> 
+	  </div>  
+	  <!--───────────────Projects───────────────-->
+	  <div id="projects">
+		 <!--───────────────content───────────────-->
+		
+             
+		  </div>
+		  </div>
+	  </div>
+	</main>
+	  <footer class="copyright">© 2020 
+		  <a href="https://repl.it/@RodolfoBortoluz" target="_blank">Rodolfo Bortoluzzi</a>
+     </footer>
+  </div>
   </body>
 </html>
-
-
