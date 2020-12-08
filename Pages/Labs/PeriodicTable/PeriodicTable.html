@@ -5,12 +5,17 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Elementos</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="/Pages/Labs/PeriodicTable/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 	<link rel="icon" href="resources/logo.jpg">
+    <script src="/Pages/Labs/PeriodicTable/jquery.pte.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/oidc-client/1.10.1/oidc-client.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="jquery.pte.min.js"></script>
 	</script>
+   
+        
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<script src="script.js">
 	</script>
@@ -43,7 +48,26 @@
 		 <section class="intro">
 		  <h3><br>Elementos<hr></h3>
             
-          <div id="my_periodic"> Periodic Table </div>
+          
+        <br>
+         <div id="my_periodic" class="card periodic_table"></div>
+        <div id="my_periodic_detail"></div>
+        <script>
+             function my_function(element){
+                var detail = '';
+                for( x in element) {
+                    if(typeof(element[x])=='object'){
+                        detail += x + ' : ' + element[x].VALUE + ' ' + element[x].UNIT + '\n';
+                    } else {
+                        detail += x + ' : ' + element[x] + '\n';
+                    }
+                }
+                alert(detail);
+            }
+            $('#my_periodic').appendTo('body').pte({ data : 'jquery.pte.json', config : {x:0,y:200,tooltip:false,size:24,spacing:1}, clickHandler : my_function });
+      
+      
+        </script>
 		  <!--────social media links─────-->
 			 
 		  <div class="social-media">
