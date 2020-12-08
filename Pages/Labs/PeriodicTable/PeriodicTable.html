@@ -49,25 +49,10 @@
 		  <h3><br>Elementos<hr></h3>
             
           
-        <br>
-         <div id="my_periodic" class="card periodic_table"></div>
-        <div id="my_periodic_detail"></div>
-        <script>
-             function my_function(element){
-                var detail = '';
-                for( x in element) {
-                    if(typeof(element[x])=='object'){
-                        detail += x + ' : ' + element[x].VALUE + ' ' + element[x].UNIT + '\n';
-                    } else {
-                        detail += x + ' : ' + element[x] + '\n';
-                    }
-                }
-                alert(detail);
-            }
-            $('#my_periodic').appendTo('body').pte({ data : 'jquery.pte.json', config : {x:0,y:200,tooltip:false,size:24,spacing:1}, clickHandler : my_function });
-      
-      
-        </script>
+        
+        
+        <iframe src="/Pages/Labs/PeriodicTable/Table.html" class="periodic-table"></iframe>
+        
 		  <!--────social media links─────-->
 			 
 		  <div class="social-media">

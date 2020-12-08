@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Elementos</title>
+	<link href="/Pages/Labs/PeriodicTable/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+	<link rel="icon" href="resources/logo.jpg">
+    <script src="/Pages/Labs/PeriodicTable/jquery.pte.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/oidc-client/1.10.1/oidc-client.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="jquery.pte.min.js"></script>
+	</script>
+   
+        
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="script.js">
+	</script>
+</head>
+    <body>
+        <main>
+            <div id="my_periodic" class="card periodic_table"></div>
+        <div id="my_periodic_detail"></div>
+             <script>
+             function my_function(element){
+                var detail = '';
+                for( x in element) {
+                    if(typeof(element[x])=='object'){
+                        detail += x + ' : ' + element[x].VALUE + ' ' + element[x].UNIT + '\n';
+                    } else {
+                        detail += x + ' : ' + element[x] + '\n';
+                    }
+                }
+                alert(detail);
+            }
+            $('#my_periodic').appendTo('body').pte({ data : 'jquery.pte.json', config: {tooltip:true,size:34,spacing:1}, clickHandler : my_function });
+    
+        
+        </script>
+        </main>
+    </body>
+</html>

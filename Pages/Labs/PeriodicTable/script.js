@@ -135,13 +135,13 @@
 
             _top = '10px';
             _left = '10px';
-            $('<div>').addClass('pte_title').html("PERIODIC TABLE OF THE ELEMENTS").css('position','absolute').css('top',_top).css('left',_left).appendTo(obj);
+            $('<div>').addClass('pte_title').html("TABELA PERIÓDICA").css('position','relative').css('top',_top).css('left',_left).appendTo(obj);
             _top = 10.3*_size + 'px';
             _left = _size + 'px';
-            $('<div>').addClass('pte_label').html("Lanthanide Series").css('position','absolute').css('top',_top).css('left',_left).appendTo(obj);
+            $('<div>').addClass('pte_label').html("Lantanídeos").css('position','absolute').css('top',_top).css('left',_left).appendTo(obj);
             _top = 11.3*_size + 'px';
             _left = _size + 'px';
-            $('<div>').addClass('pte_label').html("Actinide Series").css('position','absolute').css('top',_top).css('left',_left).appendTo(obj);
+            $('<div>').addClass('pte_label').html("Actinídeos").css('position','absolute').css('top',_top).css('left',_left).appendTo(obj);
             
             if(pte_element_closable) {
                 _left = 0.2*_size + 'px';
