@@ -2,7 +2,7 @@
     var _size;
     $.fn.pte = function(p) {
         var defaults = {
-            data : '/Pages/Labs/PeriodicTable/jquery.pte.json',
+            data : '/Labs/PeriodicTable/jquery.pte.json',
             config : {},
             clickHandler : function() {}
         }
